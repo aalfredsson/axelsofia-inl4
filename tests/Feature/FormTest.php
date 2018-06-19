@@ -48,12 +48,15 @@ class FormTests extends TestCase
              ->seePageIs('/products/3');
     }
 
-
-    
-
-
-
-    
+    public function testUpdateReviewForm()
+        {
+            $this->visit('/reviews/1/edit')
+                ->type('Sofia', 'name')
+                ->type('Love it', 'comment')
+                ->select('5', 'grade')
+                ->press('Uppdatera recension')
+                ->seePageIs('/products/1');
+        }
 
 }
 
