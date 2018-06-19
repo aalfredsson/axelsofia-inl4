@@ -33,6 +33,9 @@ class ViewsTest extends TestCase
     {
         $this->visit('/reviews')
              ->see('Alla recensioner')
+             ->see('Recensent:')
+             ->see('Produkt:')
+             ->see('Betyg:')
              ->dontsee('Alla produkter')
              ->click('Butiker')
              ->seePageIs('/stores');
@@ -47,12 +50,5 @@ class ViewsTest extends TestCase
              ->click('Start')
              ->seePageIs('/');
     }
-
-    
-
-
-
-    
-
 }
 
