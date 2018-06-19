@@ -1,14 +1,20 @@
 @extends("products.layout")
 
 @section("content")
-<h1>Alla recensioner</h1>
+<h1 style="padding-bottom: 30px; padding-top: 20px">Alla recensioner</h1>
 
 <div>
 @foreach ($reviews as $review)
-    <div class="card">
-        <div class="card-header">
-            {{ $review->name }}
-            <span style="float: right">{{ $review->grade }}/5</span>
+    <div class="card" style="margin-bottom: 20px;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <p style="margin-right: 40px; margin-bottom: 0">
+                    <strong>Recensent:</strong> 
+                    {{ $review->name }}
+                </p>
+                <p style="margin-bottom: 0"><strong>Produkt: </strong> {{ $review->product->title }}</p>
+            </div>
+            <p style="margin-bottom: 0"><strong>Betyg: </strong> {{ $review->grade }}/5</p>
         </div>
         <div class="card-body row">
             <div class="col-6">
