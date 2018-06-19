@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Store;
+use App\Product;
 
 class StoreController extends Controller
 {
@@ -65,6 +66,7 @@ class StoreController extends Controller
     {
         //
         $store = Store::find($id);
+        $store->products = $store->products;
 
         return view("stores.show", [
             "store" => $store
