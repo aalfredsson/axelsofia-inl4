@@ -1,7 +1,7 @@
 @extends("products.layout")
 
 @section("content")
-<h1>Alla recensioner</h1>
+<h1 style="padding-bottom: 30px; padding-top: 20px">Alla recensioner</h1>
 
 <div>
 @foreach ($reviews as $review)
