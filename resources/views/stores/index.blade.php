@@ -1,7 +1,7 @@
 @extends("products.layout")
 
 @section("content")
-<h1>Alla butiker</h1>
+<h1 style="padding-bottom: 30px; padding-top: 20px">Alla butiker</h1>
 
 <ul class="list-group">
 @foreach ($stores as $store)

@@ -20,13 +20,14 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
         $reviews = Review::all();
+        foreach($reviews as $review) {
+            $review->product = $review->product;
+        } 
 
         return view("reviews.index", [
             "reviews" => $reviews
         ]);
-        
     }
 
     /**
