@@ -18,6 +18,9 @@ class Products extends Migration
             $table->increments('id');
             $table->text('title');
             $table->float('price');
+            $table->text('brand');
+            $table->text('image');
+            $table->text('description');
             $table->timestamps();
         });
     }

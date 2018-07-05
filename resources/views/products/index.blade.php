@@ -2,7 +2,7 @@
 
 @section("content")
 
-<h1>Alla produkter</h1>
+<h1 style="padding-bottom: 30px; padding-top: 20px">Alla produkter</h1>
 
 <ul class="list-group">
 @foreach ($products as $product)
