@@ -48,6 +48,14 @@ class FormTests extends TestCase
              ->seePageIs('/products/3');
     }
 
+    public function testRemoveReviewForm()
+    {
+
+        $this->visit('/reviews')
+             ->press('Radera')
+             ->seePageIs('/reviews');
+    }
+
 
     
 

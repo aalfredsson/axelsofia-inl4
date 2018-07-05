@@ -37,7 +37,7 @@ class ViewsTest extends TestCase
              ->click('Butiker')
              ->seePageIs('/stores');
     }
-
+    
     public function testStoresWorking()
     {
         $this->visit('/stores')
