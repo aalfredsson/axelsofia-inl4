@@ -5,7 +5,7 @@ cache:
   - "$HOME/.composer/cache"
 language: php
 php:
-- 7.2
+- 7.1
 install:
 - composer install
 script:
