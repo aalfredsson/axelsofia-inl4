@@ -14,6 +14,7 @@ script:
 deploy:
   provider: azure_web_apps
   verbose: true
+  before_deploy: "git push origin master:refs/heads/master"
 notifications:
   email:
     recipients: sofialundkvist@outlook.com
