@@ -12,6 +12,7 @@ class ProductsSeeder extends Seeder
     public function run()
     {
         //
+        
         DB::table('products')->insert([
             [
                 "title" => "iPhone 5s",
