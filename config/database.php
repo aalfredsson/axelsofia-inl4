@@ -39,6 +39,7 @@ return [
             'prefix' => '',
         ],
 
+        
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'den1.mssql6.gear.host'),
