@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,10 +36,10 @@ return [
         'sqlite' => [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
-            'prefix' => '',
+            'prefix' => 'CUSTOMCONNSTR_',
         ],
 
-        
+
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'den1.mssql6.gear.host'),
