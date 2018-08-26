@@ -5,7 +5,7 @@ cache:
     - "$HOME/.composer/cache"
 language: php
 php:
-  - 7.1
+  - 7.2
 install:
   - composer install
   - php artisan migrate --seed
