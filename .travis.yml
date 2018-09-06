@@ -1,5 +1,5 @@
 os:
-  - linux
+  - windows
 cache:
   directories:
     - "$HOME/.composer/cache"
@@ -7,8 +7,7 @@ language: php
 php:
   - 7.2
 install:
-  - composer install
-  - php artisan migrate --seed
+  - php composer.phar install
 script:
   - phpunit --configuration phpunit.xml --coverage-text
 deploy:
@@ -17,4 +16,4 @@ deploy:
   before_deploy: "git push origin master:refs/heads/master"
 notifications:
   email:
-    recipients: sofialundkvist@outlook.com
+    recipients: aalfredsson94@gmail.com

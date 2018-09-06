@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,11 +42,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'den1.mssql6.gear.host'),
+            'host' => env('DB_HOST', 'axelsofia-mysqldbserver.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'inl4'),
-            'username' => env('DB_USERNAME', 'inl4'),
-            'password' => env('DB_PASSWORD', 'Yh0eeh98w?z~'),
+            'database' => env('DB_DATABASE', 'axelsofiadb'),
+            'username' => env('DB_USERNAME', 'axelsofiaAdmin'),
+            'password' => env('DB_PASSWORD', 'Hejsan123!'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
